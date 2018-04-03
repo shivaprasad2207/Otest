@@ -1,0 +1,35 @@
+<div id="add_container" style="margin-left:100px;">
+
+<span><h3>
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     Add Test cases to Test ID
+</h3></span>  
+
+<br><br>
+
+<span style="margin-left:80px"> Select Test Id Test ID
+                             <select name="tsetid" id="tsetid"  size="1"  style="size:40; width:250px; height:30px;">
+					  [% FOREACH category = testsetids %]
+					        <option value=""></option>
+						<option name="[% category %]_[% random1 %]_category" value="[% category %]_[% random1 %]_category">
+						      [% category %]
+						</option>  
+					  [% END %]
+			     </select>
+                             <br><br>
+			     
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     
+                             <input type="button" onclick="javascript:bring_testset_add_info('[% uid %]');return false;" name="addbutton" value="   Press  ">  
+
+</span> 
+<span id="add_container_disp"> </span>
+<span id="add_container_log"> </span>
+
+    
+</div>

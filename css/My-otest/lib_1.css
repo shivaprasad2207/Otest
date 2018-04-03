@@ -1,0 +1,24 @@
+
+body {
+  background-color:#FFFACD;
+  border: 1px solid #349EAA;
+  margin-top:20px;
+  margin-left:10%;
+  margin-right:10%;
+  width: 80%;
+  height:200%;
+  max-height: 100%; 
+}
+
+#login{
+    margin-left:500px;
+    margin-top:10px;
+    margin-right:600px;
+    background-color:#7FFFD4;
+    width:300px;
+    padding:20px;
+    border: #00CED1 solid;
+    height:190px;
+    border-radius:1em;
+    position:relative;
+}

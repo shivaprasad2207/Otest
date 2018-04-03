@@ -1,0 +1,92 @@
+<div id="container">
+<form id="passwd_form">
+
+   <table id="passwd_form_table" cellspacing="5px" border="2px" style= "
+                                                      border-color:green;
+                                                      float:left;
+                                                      background:white;
+                                                      width:50%;
+                                                      " >
+     
+                  
+                  
+                  <tr><td align="right" height="30px" bgcolor="blue">
+                       
+                       <table>
+                          <tr>
+                              <td width="40%" height="100%">
+                                 
+                              </td>
+                              <td align="right" >
+                                    <a
+                                                      href="#"
+                                                      onclick="javascript:remove_setting_disp('passwd_form_table');return false;"
+                                                      align="left"
+                                    >       
+                                                      <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/closebutton.png" />
+                                    </a>
+                              </td>
+                          </tr>
+                       </table>
+                 </td></tr> 
+                  
+                  <tr><td align="left" height="30px" bgcolor="yellow">
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> User Login Name &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <b style="font-family:Times New Roman, serif;font-size:20px;"> [% user_name %] </b>
+                                    <input type="hidden" name="user_name" value="[% user_name %]"
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr> 
+                  
+                  <tr><td align="left" height="40px">
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> Old Password &nbsp: &nbsp </b>
+                                     <input type="password" name="old_passwd" value="" size="40" 
+                                          style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> New Password &nbsp: &nbsp </b>
+                                     <input type="password" name="passwd_1" value="" size="40" 
+                                          style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> Re-Enter New Password &nbsp: &nbsp </b>
+                                     <input type="password" name="passwd_2" value="" size="40" 
+                                          style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr>
+                  
+                  <tr><td>
+                     <table align="center">
+                            <tr align="center">
+                                 <td>
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                   <input type="submit" value="Submit" size="30" onclick="javascript:submit_user_passwd();return false;"
+                                           
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:blue"/>
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+</table>
+</form>
+
+<div id="p_load_disp"> </div>
+<br><br><br><br>
+<div id="log_1"> </div>
+
+</div>

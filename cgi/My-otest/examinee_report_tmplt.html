@@ -1,0 +1,22 @@
+
+<div id="tc_view_container" style="overflow:scroll;height:700px;border:2px inset blue">
+<br><br>
+ 
+ [% FOREACH i = tests  %]
+  
+   <table cellspacing="3px">
+     
+       <tr><td><b>Quesation [% i.sln %]</b></td><td><input readonly="readonly" type="text" size="150" value="[% i.quesation %]"></td></tr>
+       <tr><td>Answer A </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% i.q_a %]"> </td></tr>
+       <tr><td>Answer B </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% i.q_b %]"> </td></tr>
+       <tr><td>Answer C </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% i.q_c %]"> </td></tr>
+       <tr><td>Answer D </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% i.q_d %]"> </td></tr>
+       <tr><td>Answer E </td>  <td> <input type="text" readonly="readonly" size="150"  	value="[% i.q_e %]"> </td></tr>
+       <tr><td>True Answer &nbsp&nbsp </td><td><input readonly="readonly" type="text"  value="[% i.answer %]"></td></tr>
+       <tr><td>User Answer &nbsp&nbsp </td><td><input readonly="readonly" type="text"  value="[% i.u_ans %]"></td></tr>     
+  </table>
+  <br>
+  [% END %]
+</div>
+   
+   

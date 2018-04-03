@@ -1,0 +1,61 @@
+
+ <table id="pormote_table" cellspacing="5px" border="2px" style= "
+                                                      border-color:green;
+                                                      float:left;
+                                                      background:white;
+                              
+                                                      " >
+                  
+                  <tr>
+                      <td height="30px" bgcolor="blue" align="right">
+                          <table>                  
+                           <tr>
+                                 <td  align="center"  height="10%">
+                                 
+                                          <b style="font-family:Verdana, sans-serif;color:white;font-size:13px">
+                                             Promote User to Librarian
+                                          </b>   
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                 </td>
+                                 
+                                 <td align="right" >
+                                       <a
+                                                      href="#"
+                                                      onclick="javascript:remove_box('pormote_table');return false;"
+                                        >       
+                                             <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/My_lib/closebutton.png" >
+                                       </a>
+                                 </td>
+                          </tr>
+                        </table>
+                
+                 </td></tr> 
+                
+                <tr><td height="50px" bgcolor="#F2F5A9">
+                         <table>
+                           <tr>
+                                 <td>
+                                             
+                                                <script type="text/javascript" src="/static/js/My_lib/jquery.js"> </script>
+                                                <script type="text/javascript" src="/static/js/My_lib/jquery.autocomplete.min.js"> </script>
+                                                <script type="text/javascript" src="/static/js/My_lib/jquery.min.js"> </script>
+                                                <script type="text/javascript" src="/static/js/My-Pizza/jquery-ui-1.8.18.custom.min.js"> </script>
+                                                <script type="text/javascript" src="/static/js/My-Pizza/jquery.ui.core.js"> </script>
+                                                <label> Enter user User Name </label>                    
+                                                <input id="uname"  type="text"  value="" >
+                                                <input type="button" id="promote_b" name="promote_b" value= "Promote User to Lib Admin"
+                                                       onclick=javascript:promote_user_to_lib_admin();return false;
+                                                >
+                                     
+                                 </td>                             
+                          </tr>
+                           
+                          <tr><td><div id="load"> </div> <div id="msg"> </div> 
+                         </table>     
+    </table>
+  

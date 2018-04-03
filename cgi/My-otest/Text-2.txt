@@ -1,0 +1,39 @@
+
+
+
+sub get_mail_sender_name_from_db {
+   my $sql = "select distinct book_category from t_book;";
+   my @categorys;
+    eval{
+      my $qh = $db_exec->prepare ($sql) or push (@errors, '<br>' . "* $sql *" . $db_exec->errstr. '<br>' );
+      $qh->execute()or push (@errors, '<br>' . "* $sql *" . $qh->errstr. '<br>' );
+      
+       while ( my($category) = $qh->fetchrow_array()){
+         push (@categorys, $category);    
+      }
+   };
+   if ( $@ ){
+            return ('FAIL',$@);
+      }else{
+            return @categorys ;
+   }  
+}
+
+sub get_mail_reciever_name_from_db {
+   my $sql = "select distinct book_category from t_book;";
+   my @categorys;
+    eval{
+      my $qh = $db_exec->prepare ($sql) or push (@errors, '<br>' . "* $sql *" . $db_exec->errstr. '<br>' );
+      $qh->execute()or push (@errors, '<br>' . "* $sql *" . $qh->errstr. '<br>' );
+      
+       while ( my($category) = $qh->fetchrow_array()){
+         push (@categorys, $category);    
+      }
+   };
+   if ( $@ ){
+            return ('FAIL',$@);
+      }else{
+            return @categorys ;
+   }  
+}
+}

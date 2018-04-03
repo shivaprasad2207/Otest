@@ -1,0 +1,64 @@
+ <table id="download_form1" border="4px" cellpadding="10px"  align="center" style="margin-left:180px">      
+      <tr>
+	  
+	  <td align="right" height="30px" bgcolor="blue" colspan=2>
+                       
+                       <table>
+                          <tr>
+                              <td width="70%" height="100%" align="center">
+                                  <b style="font-family:Verdana, sans-serif;color:white;"> 
+					    The Details of Downloading Multiple Test cases
+					    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					     
+				  </b>  
+                              </td>
+                              <td align="right" >
+                                    <a
+                                                      href="#"
+                                                     onclick="javascript:remove_setting_disp('download_form1');remove_setting_disp('download_form2');return false;"
+                                                      align="left"
+                                    >       
+                                                      <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/My-otest/closebutton.png" />
+                                    </a>
+                              </td>
+                          </tr>
+                       </table>
+          </td>
+      </tr>
+      <tr>
+	  <td>
+		    <br><br>
+		    <span style="margin-left:80px"> Select Test Set Id Of Which Test cases to be Downloaded into Xsl Sheet 
+                             <select name="tsetid" id="tsetid"  size="1"  style="size:40; width:250px; height:30px;">
+					  [% FOREACH category = testsetids %]
+					        <option value=""></option>
+						<option name="[% category %]_[% random1 %]_category" value="[% category %]_[% random1 %]_category">
+						      [% category %]
+						</option>  
+					  [% END %]
+			     </select>
+                             <br><br>    
+	             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		    <input type="button" onclick="javascript:show_xsl_download_link();return false;" value="&nbsp&nbsp&nbsp&nbsp&nbsp
+Press
+		    &nbsp&nbsp&nbsp&nbsp&nbsp" style="font-weight:bold">
+			 
+			 <br><br>
+		    </span>
+		    
+		    <br><br>
+		    <div id="div_link_show"> </div>
+		    <br><br>
+	  </td>     
+      </tr>  
+</table>
+<br><br><br>
+
+ 
+ 
+ 

@@ -1,0 +1,36 @@
+
+<form id="tcs_pop">
+ 
+ 
+ <table cellspacing="10px" cellpadding="5px">
+       <tr><td>Quesation [% sln %]</td><td><input readonly="readonly" type="text" size="150" value="[% quesation %]"></td></tr>
+       <tr><td>Answer A </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% q_a %]"> </td></tr>
+       <tr><td>Answer B </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% q_b %]"> </td></tr>
+       <tr><td>Answer C </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% q_c %]"> </td></tr>
+       <tr><td>Answer D </td>  <td> <input readonly="readonly" type="text" size="150"  	value="[% q_d %]"> </td></tr>
+       <tr><td>Answer E </td>  <td> <input type="text" readonly="readonly" size="150"  	value="[% q_e %]"> </td></tr>
+       <tr><td>True Answer &nbsp&nbsp </td><td>
+                                                <b>A</b> &nbsp <input type="radio" name="true_[% sln %]" value="a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                <b>B</b> &nbsp <input type="radio"  name="true_[% sln %]" value="b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                <b>C</b> &nbsp <input type="radio"  name="true_[% sln %]" value="c">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                <b>D</b> &nbsp <input type="radio"  name="true_[% sln %]" value="d">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                <b>E</b> &nbsp <input type="radio"  name="true_[% sln %]" value="e">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                <input  type="hidden" name ="attempt_id" value="[% atmptid %]">
+                                                <input  type="hidden" name ="testsetid_id" value="[% testsetid %]">
+                                                <input  type="hidden" name ="sln" value="[% sln %]"> 
+                                                <br><br><br>
+                                                
+                                                [% IF last_ans == "O" %]
+                                                
+                                                      <b>Last Time Answered : Not Attempted </b>  
+                                                [% ELSE %]
+                                                      <b>Last Time Answered : [% last_ans %] </b>  
+                                                [% END %]                                      
+                                                </td> 
+       </tr>
+  </table>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<input type="button" onclick="javascript:pop_up_tcs_submit();return false;" value = "  SUBMIT  "> <div id="load"> </div>
+<br><br>
+</form>

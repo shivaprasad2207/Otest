@@ -1,0 +1,164 @@
+<div id="container">
+<form id="create_form">
+<table id="edit_table" cellspacing="5px" border="2px" style= "
+                                                      border-color:green;
+                                                      float:right;
+                                                      background:white;
+                                                      margin-right:50px;
+                              
+                                                      " >              
+                  <tr><td align="right" height="30px" bgcolor="blue">
+                       
+                       <table>
+                          <tr>
+                              <td width="60%" height="100%" align="center">
+                                  <b style="font-family:Verdana, sans-serif;color:white;"> Create New User Account </b>  
+                              </td>
+                              <td align="right" >
+                                    <a
+                                                      href="#"
+                                                     onclick="javascript:remove_setting_disp('create_form');return false;"
+                                                      align="left"
+                                    >       
+                                                      <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/My_Lib/closebutton.png" />
+                                    </a>
+                              </td>
+                          </tr>
+                       </table>
+                 </td></tr> 
+                  
+                  <tr><td>
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> Enter User Login Name &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" name="user_login_name" value="">
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr>
+                  
+                  <tr><td>
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> User Password &nbsp: &nbsp</b>
+                                    <b style="font-family: monospace;color:red;"> same as Login Name </b>
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr> 
+                  
+                  <tr><td>
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> User Role &nbsp: &nbsp </b>
+                                    <b style="font-family: monospace;color:red;">User will have general usage privalages </b>
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr> 
+                  
+                  <tr><td>
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> Enter User First Name &nbsp: &nbsp </b>
+                                     <input type="text" name="first_name" value=" " size="40" 
+                                          style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                    <br><br>   
+                                   <b style="font-family:Verdana, sans-serif;color:blue;"> Enter User Last Name &nbsp: &nbsp </b>
+                                   <input type="text" name="last_name" value="" size="40"
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:red"/> 
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr>
+                   
+                  <tr><td>
+                       <table>
+                            <tr>
+                                 <td>
+                                   <b style="font-family:Verdana, sans-serif;color:blue;">Enter User Adress &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="adress" value="" size="80"
+                                            style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                             </tr>
+                         </table>
+               
+                  </td></tr>
+                  
+                  <tr><td>
+                       <table>
+                            <tr>
+                                 <td>
+                                   <b style="font-family:Verdana, sans-serif;color:blue;">Enter Delivery Adress &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="delivery_adress" value="" size="80"
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:red"/> 
+                                 </td>
+                             </tr>
+                         </table>
+               
+                  </td></tr>
+                 
+                  <tr><td>
+                      <table>
+                            <tr>
+                                 <td>
+                                   <b style="font-family:Verdana, sans-serif;color:blue;"> Enter User Contact No &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="mobile" value=" " size="30" 
+                                            style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+                  
+                  <tr><td>
+                     <table>
+                            <tr>
+                                 <td>
+                                 <b style="font-family:Verdana, sans-serif;color:blue;">Enter User EMailId &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                   <input type="text" name="user_email" value="" size="30"
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+                  
+                  <tr><td>
+                     <table align="center">
+                            <tr align="center">
+                                 <td>
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    
+                                   <input type="submit" value="Submit" size="30" onclick="javascript:submit_new_user_create( );return false;"
+                                           
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:blue"/>
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+            </table>
+
+</form>
+
+
+<div id="create_user_load_disp"> </div>
+<br><br><br><br>
+<div id="create_user_log"> </div>
+
+</div>

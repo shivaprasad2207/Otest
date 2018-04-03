@@ -1,0 +1,98 @@
+<body>
+      <div width="80%" height="50px" style="margin-top:10px;margin-left:8px">
+       
+         <b style="font-family:Times New Roman,Georgia,Serif;color:blue; font-size:40px;font-style:normal;border:10px ">
+			    Online Objective Test Tool
+					  
+	 </b>
+	 <div style="bottom:0px; float:right">
+						<SMALL style="bottom:0px;float:inherit;color:#BC8F8F">
+						<a href="http://www.shivaprasad.co.in" target="_blank"> ©Author </a> 
+						</SMALL>
+          </div>
+	 <br><br><br>
+	 <img alt='pic not found' src="/static/images/My-otest/p1.jpg" width="110px" height="90px">
+         
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         
+	 <img alt='pic not found' src="/static/images/My-otest/p2.jpg" width="110px" height="90px">
+         
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 
+	 <img alt='pic not found' src="/static/images/My-otest/p3.jpg" width="100px" height="90px">
+	    
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 
+	 <img alt='pic not found' src="/static/images/My-otest/p4.jpg" width="100px" height="90px">   
+         
+	     
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     
+	 
+	 <a href="index.pl?AppParam=SETTINGS"><b>Settings</b> </a>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp
+	 <a href="#" onclick="javascript:logout( '[% sid %]' )"><b>Logout</b> </a>
+	 
+	 <br><br>
+	 <h3>Welcome [% user_name %] <h3>
+      </div>
+                  
+	  <div id="page-wrap" style="margin-top:10px;margin-left:180px">
+	
+               <ul class="dropdown">
+	        <li><a href="index.pl?AppParam=MainPage">Main</a>
+        	<li><a href="#">Create Test Set</a>
+        		<ul class="sub_menu">
+        			 <li><a href="index.pl?AppParam=CRTID">Create Test Set ID</a></li>
+			         <li> <a href="index.pl?AppParam=ADDTCS">Add Test Case of Test Set</a> </li>
+				 <li> <a href="index.pl?AppParam=VIEWTCS">View Test Case of Test Set</a> </li>
+				 <li> <a href="index.pl?AppParam=MODTCS">Modify Test Case of Test Set</a> </li>
+				 <li> <a href="index.pl?AppParam=DELTCS">Delete Test case From Testset </a></li>
+        		</ul>
+        	</li>
+        	<li><a href="#">Your Test Sets</a>
+        		<ul class="sub_menu">
+        			<li><a href="index.pl?AppParam=VIEWTCS">My Test sets Created </a> </li>
+				<li><a href="index.pl?AppParam=XLS_UPLOAD">Import Test Cases to Test set </a></li>
+				<li><a href="index.pl?AppParam=XLS_DOWNLOAD">Export My Test Set </a></li>
+        			<li><a href="#">FUNC4</a></li>
+				<li><a href="#">FUNC5</a></li>
+        			
+        		</ul>
+        	</li>
+        	
+		<li><a href="#">User and Tests</a>
+        		<ul class="sub_menu">
+        			<li><a href="index.pl?AppParam=USER_N_TESTS"> Users of Test </a></li>
+				<li><a href="#" >Users with Test Details</a></li>
+        			<li><a href="#" >FUNC1</a></li>
+        			<li><a href="#" >FUNC2</a></li>
+				<li><a href="#" >FUNC3</a></li>
+        			
+        		</ul>
+        	</li>
+	
+		<li><a href="#">Report and Results</a>
+        		<ul class="sub_menu">
+        		        <li><a href="#" onclick="javascript:announcement();return false;">Func1 </a></li>
+				<li><a href="#" onclick="javascript:calender_events();return false;">Func2</a></li>
+        			<li><a href="#" onclick="javascript:sponsered_events();return false;">Func3</a></li>
+        			<li><a href="#" onclick="javascript:gallery();return false;">Func4</a></li>
+			    
+        		</ul>
+        	</li>
+        	
+        </ul>
+		
+	</div>
+      <br><br>
+      <div id="core_load" width="80%" height="50px" style="margin-top:10px;margin-left:100px"> </div>
+      <div id="core_msg" width=90%" height="50px" style="margin-top:10px;margin-left:150px">  </div>
+      
+</body>
+
+
+
+          

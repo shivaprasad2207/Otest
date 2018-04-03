@@ -1,0 +1,156 @@
+<div id="container">
+<form id="search_by_form">
+<table id="search_by_table" cellspacing="15px" border="2px" style= "
+                                                      border-color:green;
+                                                      float:right;
+                                                      background:white;
+                                                      width:65%;
+                                                      margin-right:10px;
+                                                      " >       
+                  
+                  
+                  <tr><td align="right" height="30px" bgcolor="blue">
+                       
+                       <table>
+                          <tr>
+                              <td width="100%" height="100%" align="center">
+                                <b style="font-family:Verdana, sans-serif;color:white;"> Serach User by Info </b> 
+                              </td>
+                              <td align="right" >
+                                    <a
+                                                      href="#"
+                                                      onclick="javascript:remove_setting_disp('search_by_table');return false;"
+                                                      align="left"
+                                    >       
+                                                      <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/closebutton.png" />
+                                    </a>
+                              </td>
+                          </tr>
+                       </table>
+                 </td></tr> 
+                  
+                  <tr><td>
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;">Login is Having word &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" id ="uname" name="uname" value="">
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr> 
+                  
+                  <tr><td>
+                         <table>
+                           <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;">User First name Having word &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" id ="fname" name="fname" value="">
+                                 </td>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;">User Last name Having word &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" id ="lname" name="lname" value="">
+                                 </td>
+                           
+                           </tr>
+                         </table>
+                  </td></tr>
+                   
+                  <tr><td>
+                       <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;">User Adress Having word &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" id ="adress" name="adress" value="">
+                                 </td>
+                             </tr>
+                         </table>
+               
+                  </td></tr>
+                  
+                  <tr><td>
+                       <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;">User Delivery Adress Having word &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" id ="dadress" name="dadress" value="">
+                                 </td>
+                             </tr>
+                         </table>
+               
+                  </td></tr>
+                 
+                  <tr><td>
+                      <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;">User contact number Having number &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" id ="phone" name="phone" value="">
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+                  
+                  <tr><td>
+                      <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;">User email Having word &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                     <input type="text" id ="email" name="email" value="">
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+                  
+                  <tr><td>
+                     <table align="center">
+                            <tr align="center">
+                                 <td>
+                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    
+                               [% IF flag == 1 %]     
+                                 <input type="submit" value="Submit" size="30" onclick="javascript:user_info_by_fields_get_param( );return false;"
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:blue"/>      
+                               
+                               [% ELSIF flag == 2 %]
+                                <input type="submit" value="Submit" size="30" onclick="javascript:delete_this_user_get_param( );return false;"
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:blue"/>  
+                               
+                               
+                               [% ELSE  %]      
+                                   
+                                   <input type="submit" value="Submit" size="30" onclick="javascript:search_user_info_by_fields( );return false;"
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:blue"/>
+                               
+                               [% END %]    
+                                   
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+            </table>
+
+</form>
+
+<div id="s_load_disp"> </div>
+<div id="s_load_disp"> </div>
+<br><br><br><br>
+<div id="log_2"> </div>
+</div>

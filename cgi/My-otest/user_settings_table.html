@@ -1,0 +1,161 @@
+
+<br>
+<table cellspacing="10px" height="700px" width="1350px" border="3px" style="border-color:none; border-radius:1em;">
+
+   <tr >
+      <td width="350px" style="border-color:red; border-radius:1em;border-width:3px">
+            <table cellspacing="20px" style="top:-170px; position:relative; border-radius:1em;   ">
+        
+                  <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','USER_DETAILS' );return false;"
+                              onmouseover="this.style.background='gray'"
+                              onmouseout="this.style.background='#E3FEFA'"
+                              style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              
+                              User Details
+                              
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </a>
+                  </td></tr>
+        
+                  <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','CHANGE_PASSWD' );return false;"
+                              onmouseover="this.style.background='gray'"
+                              onmouseout="this.style.background='#E3FEFA'"
+                              style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                           
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                           
+                              Change Passwd
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        
+                        </a>            
+                  </td></tr>
+        
+                  <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','CHANGE_LOGIN' );return false;"
+                              onmouseover="this.style.background='gray';"
+                              onmouseout="this.style.background='#E3FEFA';"
+                             style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                              
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              Change Login
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              
+                        </a>
+           
+                  </td></tr>
+                  
+                  <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','EDIT_USER_DETAILS' );return false;"
+                              onmouseover="this.style.background='gray';"
+                              onmouseout="this.style.background='#E3FEFA';"
+                              style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                           
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              
+                             Edit User Details
+                              
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </a>
+           
+                  </td></tr>
+            
+      [% IF shop_admin %]
+               <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','PROMOT_SHOP_ADMIN' );return false;"
+                              onmouseover="this.style.background='gray';"
+                              onmouseout="this.style.background='#E3FEFA';"
+                              style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                              &nbsp Promote User to Shop Admin &nbsp&nbsp&nbsp&nbsp
+                        </a>
+           
+                  </td></tr>
+      
+      [% END %]
+            
+       [% IF shop_admin_depromote %]
+               <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','DEPROMOT_SHOP_ADMIN' );return false;"
+                              onmouseover="this.style.background='gray';"
+                              onmouseout="this.style.background='#E3FEFA';"
+                              style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                              &nbsp De-Promote User of Shop Admin 
+                        </a>
+           
+                  </td></tr>
+      
+      [% END %]     
+      
+      [% IF admin %]
+               <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','PROMOTE_ROLES' );return false;"
+                              onmouseover="this.style.background='gray';"
+                              onmouseout="this.style.background='#E3FEFA';"
+                              style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                              Promote Users for Different Roles
+                        </a>
+           
+                  </td></tr>
+               
+                  <tr><td>
+                        <a
+                              href="#"
+                              id = "MyAppName_4x"
+                              onclick="javascript:user_settings('[% name %]','CREATE_NEW_USER' );return false;"
+                              onmouseover="this.style.background='gray';"
+                              onmouseout="this.style.background='#E3FEFA';"
+                              style="background:#E3FEFA;padding:5px;margin:5px; border-radius:1em;"
+                        >
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              Create New User
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </a>
+           
+                  </td></tr>
+      
+      [% END %]     
+      
+      
+            </table> 
+      </td>       
+      
+      <td align="center" style="border-color:red; border-radius:1em;border-width:3px;" id="setting_disp">
+                  Dialog BOx Disp Area
+                  
+                  
+         <div id="load_disp"> </div>
+      </td>
+        
+  </tr>
+
+</table>

@@ -1,0 +1,35 @@
+<div id="user_test" style="margin-left:100px;border:2px inset red">
+
+<span><h3>
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     View User Attempts Info for Test cases 
+</h3></span>  
+
+<br><br>
+
+<span style="margin-left:80px"> Select Test Id Test ID
+                             <select name="tsetid" id="tsetid"  size="1"  style="size:40; width:250px; height:30px;">
+					  [% FOREACH category = testsetids %]
+					        <option value=""></option>
+						<option name="[% category %]_[% random1 %]_category" value="[% category %]_[% random1 %]_category">
+						      [% category %]
+						</option>  
+					  [% END %]
+			     </select>
+                             <br><br>
+			     
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     
+                             <input type="button" onclick="javascript:show_user_with_test_details('[% uid %]');return false;" name="addbutton" value="   Press  ">  
+
+</span>
+
+<br><br>
+<span id="user_test_disp"> </span>
+<span id="user_test_log"> </span>
+</div>

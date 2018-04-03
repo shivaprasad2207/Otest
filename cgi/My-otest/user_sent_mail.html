@@ -1,0 +1,279 @@
+
+ <table id="compose_table" cellspacing="5px" border="2px" style= "
+                                                      border-color:green;
+                                                      float:right;
+                                                      background:white;
+                              
+                                                      " >
+                  <tr><td align="right" height="30px" bgcolor="blue">
+                        <table>
+                          <tr>
+                                 <td align="center" width="70%" height="100%">
+                                       <b style="font-family:Verdana, sans-serif;color:white;font-size:13px">
+                                    
+                                          Sent Mail BOX
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                          
+                                          
+                                       </b>
+                                 </td>
+                                 <td align="right" >
+                                       <a
+                                                      href="#"
+                                                      onclick="javascript:remove_box('compose_table');return false;" 
+                                                
+                                       >       
+                                             <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/My_lib/closebutton.png" >
+                                       </a>
+                                 </td>
+                          </tr>
+                       </table>
+                
+                 </td></tr> 
+                
+                <tr><td height="50px" bgcolor="#F2F5A9">
+                <table cellspacing="5px">
+                  
+                <tr>
+                    
+                  <td
+                          style="
+                                                    margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                    
+                            Sender
+                  
+                  </td>  
+                 
+                  <td
+                          style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                      
+                        Reciever
+                  </td>
+                    
+                  <td
+                          style="
+                                                    margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                    
+                            Subject
+                  
+                  </td>
+                  
+                  <td
+                          style="
+                                                    margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                    
+                           Sent Date
+                  
+                  </td>
+                  
+                  
+                 <td
+                          style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                    
+                          Group
+                  
+                  
+                  </td>
+                
+                <td
+                          style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                    
+                          Actions
+                  
+                  
+                  </td>
+                
+                
+                
+             </tr>                  
+      [% FOREACH item = items %]
+                
+                <tr>
+                      
+                     <td
+                          style="
+                                                  margin-left:10px;
+                                                   margin-right:10px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#C7C7AF;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                              "
+                      >
+                      
+                      
+                      <a href="#" onclick="javascript:open_this_mail_content('[% item.mail_unique_id %]' , '[% item.reciever_name %]');return false">
+                                  [% item.sender_name %]
+                       </a> 
+                       
+                       </td> 
+                      
+                      <td
+                          style="
+                                                    margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#C7C7AF;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                        <a href="#" onclick="javascript:open_this_mail_content('[% item.mail_unique_id %]' , '[% item.reciever_name %]');return false">
+                                [% item.reciever_name %]
+                        </a>
+                      
+                      </td>
+                       <td
+                          style="
+                                                    margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#C7C7AF;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          "
+                      >
+                        <a href="#" onclick="javascript:open_this_mail_content('[% item.mail_unique_id %]' , '[% item.reciever_name %]');return false">
+                                  [% item.subject %]
+                         </a>
+                       
+                       
+                       </td>
+                       <td
+                           style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#C7C7AF;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                              "
+                      >
+                      
+                      
+                      <a href="#" onclick="javascript:open_this_mail_content('[% item.mail_unique_id %]' , '[% item.reciever_name %]');return false">
+                                  [% item.sent_date %]
+                        </a>
+                       
+                       </td>
+                       
+                       <td
+                          style="
+                                                   margin-left:10px;
+                                                   margin-right:10px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#C7C7AF;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                               "
+                      > 
+                      
+                         <a href="#" onclick="javascript:open_this_mail_content('[% item.mail_unique_id %]' , '[% item.reciever_name %]');return false">  
+                      
+                                [% item.recieve_group %]
+                         
+                         </a>
+                         
+                       </td>
+                       
+                       <td
+                          style="
+                                                   margin-left:10px;
+                                                   margin-right:10px;
+                                                   border-color:green;
+                                                   border-width:10px;
+                                                   background:#C7C7AF;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                               "
+                      > 
+                          <form id="aform">
+                                <select id="mymenuq_[% item.mail_unique_id %]" size="1"
+                                         onChange="javascript:show_sent_mail_action('mymenuq_', '[% item.mail_unique_id %]' , '[% item.reciever_name %]');
+                                         return false;" >
+                                    <option value="nothing" selected="selected">Select Action</option>
+                                    <option value="FARWARD">Send Mail copy To INBOX</option>
+                                    <option value="REPLY">Send Mail Copy to Draft BOX</option>
+                                    <option value="DELETE">DELETE</option>
+                                </select>
+                          </form>
+
+                         
+                       </td>                      
+                       
+                </tr>                
+      [% END %]
+                  </table>
+                </td></tr> 
+    </table>
+ <p id="load_disp"> </p>

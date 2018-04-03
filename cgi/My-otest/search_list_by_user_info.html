@@ -1,0 +1,87 @@
+<div id="container">
+<table id="search_list_table"   cellpadding=10px cellspacing=10px      style= "
+                                                      border-color:green;
+                                                      float:right;
+                                                      background:white;
+                                                      width:40%;
+                                                      margin-right:50px;
+                                                      " >       
+                  
+                  
+                  <tr><td align="right" height="30px" bgcolor="blue">
+                       
+                       <table>
+                          <tr>
+                              <td width="100%" height="100%" align="center">
+                                <b style="font-family:Verdana, sans-serif;color:white;"> Serach User by Info </b> 
+                              </td>
+                              <td align="right" >
+                                    <a
+                                                      href="#"
+                                                      onclick="javascript:remove_setting_disp('search_list_table');return false;"
+                                                      align="left"
+                                    >       
+                                                      <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/closebutton.png" />
+                                    </a>
+                              </td>
+                          </tr>
+                       </table>
+                 </td></tr>
+                 
+                 [% FOREACH user = USERS %]
+                      <tr>
+                        <td height="100%" align="left">
+                         [% IF flag == 1 %]
+                        
+                             <a href="#"  onclick="javascript:get_book_info_of_this_user_by_admin('[% user %]');return false"
+                           
+                               
+                             >
+                                 <b style="font-family:Verdana, sans-serif;background:#FAEBD7;
+                                       margin:25px;
+                                       border:15x;
+                                       border-color:red;
+                                       border-width:9px;
+                                       padding:2px;">   [% user %] </b>
+                           </a>
+                         
+                         [% ELSIF flag == 2 %]
+                         
+                         <a href="#"  onclick="javascript:delete_this_user_by_admin('[% user %]');return false"
+                           
+                               
+                             >
+                                 <b style="font-family:Verdana, sans-serif;background:#FAEBD7;
+                                       margin:25px;
+                                       border:15x;
+                                       border-color:red;
+                                       border-width:9px;
+                                       padding:2px;">   [% user %] </b>
+                           </a>
+ 
+                         [% ELSE %]
+                        
+                             <a href="#"  onclick="javascript:get_info_of_this_user_by_admin('[% user %]');return false"
+                           
+                               
+                             >
+                                 <b style="font-family:Verdana, sans-serif;background:#FAEBD7;
+                                       margin:25px;
+                                       border:15x;
+                                       border-color:red;
+                                       border-width:9px;
+                                       padding:2px;">   [% user %] </b>
+                           </a>
+                          
+                        [% END %]  
+                          
+                          
+                          
+                          <div id="[% user %]_load"> </div>
+                     </td>
+                </tr>
+                [% END %]
+                <tr> <td> <div id="load"> <div> </td></tr>
+</table>
+</div>
+        

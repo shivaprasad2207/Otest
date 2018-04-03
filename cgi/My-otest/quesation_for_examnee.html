@@ -1,0 +1,41 @@
+
+<div id="tc_view_container" style="overflow:scroll;height:700px;border:2px inset blue">
+<br>
+   
+ [% FOREACH i = tests  %]
+   <table cellspacing="9px">
+       <tr> <td><b>Quesation [% i.sln %] &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></td>
+	    <td>
+	       <a href="#" onclick="javascript:pop_up_quesation('[% i.sln %]' , '[% testsetid %]' , '[% sid %]' , '[% i.atmpt_ans %]');return false;">
+		  <b>[% i.quesation %]</b><br>
+	       </a>     
+	    </td>
+	    <td>
+	       
+	      [% IF i.atmpt_ans == "O" %] 
+	       <div id="attempt" style="
+					  font-size: large;
+					  font-family:Times New Roman,Georgia,Serif;
+					  color:red;
+					">
+		  &nbsp&nbsp&nbsp&nbsp&nbsp [% i.attaempt %]
+	       </div> 	  
+	      [% ELSE %]
+	        <div id="attempt" style="
+					  font-size: large;
+					  font-family:Times New Roman,Georgia,Serif;
+					  color:green;
+					">
+		  &nbsp&nbsp&nbsp&nbsp&nbsp [% i.attaempt %]
+	       </div> 	  
+	      [% END %]
+	      
+	       <div id="load_[% i.sln %]"> </div> 
+	    </td>   
+       </tr>
+  </table>
+  <br>
+  [% END %]
+</div>
+   
+   

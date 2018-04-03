@@ -1,0 +1,77 @@
+<table id="test_case_add" border="4px" cellpadding="10px"  align="center" style="margin-left:120px">
+      <tr>
+	  <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                      "  
+	    >
+	        User who took Test 
+	    </td>
+	     
+           <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                    User Personal Details
+	    </td>
+            
+            <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                    User Test summary result
+	    </td>
+            
+            <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                    User Test detaild result
+	    </td>
+      </tr>       
+      
+      [% FOREACH i = info %]
+      <tr>
+           <td>
+                [% i.uname %]
+           </td>  
+           <td><input type="button" onclick="javascript:show_user_info('[% i.uname %]','[% i.testsetid %]','[% i.sid %]');return false;"
+                      value=" USER INFO "> <div id="[% i.sid %]_user_info">
+		    
+           </td>
+           <td><input type="button" onclick="javascript:show_user_summary_testinfo('[% i.uname %]','[% i.testsetid %]','[% i.sid %]');return false;"
+                      value=" Test Summary "> <div id="[% i.sid %]_summary_info">
+           </td> 
+            <td><input type="button" onclick="javascript:show_user_detailed_testinfo('[% i.uname %]','[% i.testsetid %]','[% i.sid %]');return false;"
+                      value=" Detailed Test Result ">
+           </td>
+      </tr>
+     [% END %] 
+   </table>

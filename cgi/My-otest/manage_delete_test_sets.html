@@ -1,0 +1,37 @@
+<div id="view_container" style="margin-left:100px;border:2px inset red">
+
+<span><h3>
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     Delete Test cases From Test ID
+</h3></span>  
+
+<br><br>
+
+<span style="margin-left:80px"> Select Test Id Test ID
+                             <select name="tsetid" id="tsetid"  size="1"  style="size:40; width:250px; height:30px;">
+					  [% FOREACH category = testsetids %]
+					        <option value=""></option>
+						<option name="[% category %]_[% random1 %]_category" value="[% category %]_[% random1 %]_category">
+						      [% category %]
+						</option>  
+					  [% END %]
+			     </select>
+                             <br><br>
+			     
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			     
+                             <input type="button" onclick="javascript:bring_testset_del_info('[% uid %]');return false;" name="addbutton" value="   Press  ">  
+
+</span>
+<br><br>
+<div  id="load" style="margin-left:80px"> </div>
+<div id="mesg" style="margin-left:80px"> </div>
+<br><br>
+<span id="view_container_disp"> </span>
+<span id="view_container_log"> </span>
+</div>

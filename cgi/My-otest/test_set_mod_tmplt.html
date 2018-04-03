@@ -1,0 +1,108 @@
+
+<div id="tc_mod_container" style="overflow:scroll;height:700px;border:2px inset blue">
+<br><br>
+ 
+   <table id="test_case_add" border="4px" cellpadding="10px"  align="center" style="margin-left:120px">
+      <tr>
+	  <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                      "  
+	    >
+	         Test Set Owner 
+	    </td>
+	    <td>
+	      <b>  [% uname %] </b>
+	    </td>   
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Test set Description 
+	    </td>
+            <td>
+	       <b> [% description %] </b>
+	    </td>   
+	</tr>  
+       
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Test set Details 
+	    </td>
+            <td>
+	       <b> [% details %] </b>
+	    </td>   
+	</tr>  
+ 
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Number of Test cases Added Till Now 
+	    </td>
+            <td>
+	       <b> [% count %] </b>
+	       <input type="hidden" id="testsetid" name=testsetid" value="[% testsetid %]">
+	    </td>   
+	</tr>           
+   </table>
+
+<br>
+   
+ [% FOREACH i = tests  %]
+  
+   <form id="form_[% testsetid %]_[% i.sln %]">
+   <table cellspacing="3px">
+     
+       <tr><td><b>Quesation [% i.sln %]</b></td>
+			       <td> <input  type="text" size="150"  name="quesation_[% i.sln %]"   value="[% i.quesation %]"></td></tr>
+       <tr><td>Answer A </td>  <td> <input  type="text" size="150"  name="ans_a_[% i.sln %]"	value="[% i.q_a %]"> </td></tr>
+       <tr><td>Answer B </td>  <td> <input  type="text" size="150"  name="ans_b_[% i.sln %]"	value="[% i.q_b %]"> </td></tr>
+       <tr><td>Answer C </td>  <td> <input  type="text" size="150"  name="ans_c_[% i.sln %]"	value="[% i.q_c %]"> </td></tr>
+       <tr><td>Answer D </td>  <td> <input  type="text" size="150"  name="ans_d_[% i.sln %]"	value="[% i.q_d %]"> </td></tr>
+       <tr><td>Answer E </td>  <td> <input  type="text"  size="150" name="ans_e_[% i.sln %]" 	value="[% i.q_e %]"> </td></tr>
+       <tr><td>True Answer &nbsp&nbsp </td><td><input type="text"  name="true_[% i.sln %]" value="[% i.answer %]"> </td></tr>
+       <tr><td><input type="button" value=" Modify Test case " onclick="javascript:modify_testcase_of_testset('[% i.sln %]','[% testsetid %]');return false;"></td>
+	   <td><div id="load_[% testsetid %]_[% i.sln %]"> </div> 	                              
+       </td></tr>
+      
+  </table>
+   </form> 
+  <br>
+  [% END %]
+
+</div>
+   
+   

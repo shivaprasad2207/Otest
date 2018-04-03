@@ -1,0 +1,58 @@
+ <table id="upload_form" border="4px" cellpadding="10px"  align="center" style="margin-left:120px">      
+      <tr>
+	  
+	  <td align="right" height="30px" bgcolor="blue" colspan=2>
+                       
+                       <table>
+                          <tr>
+                              <td width="60%" height="100%" align="center">
+                                  <b style="font-family:Verdana, sans-serif;color:white;"> 
+					    The Details of Multiple New Books to be Added
+				  </b>  
+                              </td>
+                              <td align="right" >
+                                    <a
+                                                      href="#"
+                                                     onclick="javascript:remove_setting_disp('upload_form');return false;"
+                                                      align="left"
+                                    >       
+                                                      <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/My_Lib/closebutton.png" />
+                                    </a>
+                              </td>
+                          </tr>
+                       </table>
+          </td>
+      </tr>
+      <tr>
+      <td>            
+              <table><tr><td>
+               <br><br>
+                <b>To Upload Multiple Books upload xsl sheet as same format as shown foramt.xsl</b>
+                 <br>
+                  <form method="post" action="lib_manage.pl" enctype="multipart/form-data">
+                        <center>
+                           Enter a file to upload: <input type="file" name="upfile"><br>
+                           <input type="submit" name="button" value="Upload File">
+                           <input type="hidden" name="flag" value="UPLOAD_FILE">
+                        </center>
+                  </form>
+                  <br><br>
+             </td></tr></table>  
+        </td>
+      </tr>
+      <tr>
+      <td>
+            <br><br> 
+            <b>Press Blow Link to see sample of Upload Multiple Books info in xsl sheet </b>
+            <br><br>
+            <a href="#" onclick="javascript:show_sample_xls_sheet ( );return false;">
+                sample xsl sheet
+            </a>
+            <div id="load"> <div>
+            <br><br>
+          </td>
+      </tr>    
+ </table>
+ 
+ 
+ 

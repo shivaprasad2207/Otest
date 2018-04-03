@@ -1,0 +1,113 @@
+
+<div id="tc_add_container">
+<br><br>
+ 
+   <table id="test_case_add" border="4px" cellpadding="10px"  align="center" style="margin-left:120px">
+      <tr>
+	  <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                      "  
+	    >
+	         Test Set Owner 
+	    </td>
+	    <td>
+	      <b>  [% uname %] </b>
+	    </td>   
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Test set Description 
+	    </td>
+            <td>
+	       <b> [% description %] </b>
+	    </td>   
+	</tr>  
+       
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Test set Details 
+	    </td>
+            <td>
+	       <b> [% details %] </b>
+	    </td>   
+	</tr>  
+ 
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Number of Test cases Added Till Now 
+	    </td>
+            <td>
+	       <b> [% count %] </b>
+	       <input type="hidden" id="testsetid" name=testsetid" value="[% testsetid %]">
+	    </td>   
+	</tr>           
+   </table>
+
+<br>
+   
+ <form id="test_case_add_form">
+ [% FOREACH i IN range %]
+  <table cellspacing="3px">
+     
+      <tr><td> <b> Quesation [% i %] </b> </td>  <td> <input type="text" size="150" name="quesation_[% i %]" value=""></td></tr>
+       <tr>   <td> Answer A </td>  <td> <input type="text" size="150" name="ans_a_[% i %]" value=""> </td> </tr>
+       <tr>   <td> Answer B </td>  <td> <input type="text" size="150" name="ans_b_[% i %]" value=""> </td></tr>
+       <tr>   <td> Answer C </td>  <td> <input type="text" size="150" name="ans_c_[% i %]" value=""> </td></tr>
+       <tr>  <td> Answer D </td>  <td> <input type="text" size="150" name="ans_d_[% i %]" value=""> </td></tr>
+	<tr>  <td> Answer E </td>  <td> <input type="text" size="150" name="ans_e_[% i %]" value=""> </td></tr>
+        <tr>  <td>  True Answer &nbsp&nbsp </td>  <td>
+		  
+				      <b>A</b> &nbsp  <input type="radio" name="true_[% i %]" value="a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				      <b>B</b> &nbsp <input type="radio"  name="true_[% i %]" value="b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				      <b>C</b> &nbsp <input type="radio"  name="true_[% i %]" value="c">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				      <b>D</b> &nbsp <input type="radio"  name="true_[% i %]" value="d">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				      <b>E</b> &nbsp <input type="radio"  name="true_[% i %]" value="e">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	                          </td>
+      </tr>
+      
+  </table>
+  <br>
+  [% END %]
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <input type="button" onclick="javascript:get_param_test_case_add();return false;" name="submit" value="     ADD TEST CASES    ">
+ </form>
+
+</div>
+   
+<span id="mesg" > </span>   

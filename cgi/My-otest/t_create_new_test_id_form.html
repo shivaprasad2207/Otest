@@ -1,0 +1,130 @@
+<div id="container" style="margin-left:100px;">
+
+   <form id="create_new_test_id_form">
+     <table id="edit_table" cellspacing="5px" border="2px" style= "
+                                                      border-color:green;
+                                                      background:white;
+                                                      
+                                                      " >                    
+                  <tr><td align="right" height="30px" bgcolor="blue">
+                       
+                       <table>
+                          <tr>
+                              <td width="100%" height="100%" align="center">
+                                <b style="font-family:Verdana, sans-serif;color:white;"> Create New Test ID Form </b>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                
+                              </td>
+                              <td align="right" >
+                                    <a
+                                                      href="#"
+                                                      onclick="javascript:remove_setting_disp('container');return false;"
+                                                      align="left"
+                                    >       
+                                                      <img id="cancel_buttons_O_ID" hight="30px" width="30px" src="/static/images/My_lib/closebutton.png" />
+                                    </a>
+                              </td>
+                          </tr>
+                       </table>
+                 </td></tr> 
+                  
+                  <tr><td>
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> User Creating Test ID &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <b style="font-family:Times New Roman, serif;font-size:20px;"> [% user_name %] </b>
+                                     <input type="hidden" name="user_login_name" id="user_login_name" value="[% user_name %]">
+                                 </td>
+                             </tr>
+                         </table>
+                  </td></tr> 
+                  
+                  <tr><td>
+                         <table>
+                            <tr>
+                                 <td>
+                                    <b style="font-family:Verdana, sans-serif;color:blue;"> Description of Test ID &nbsp: &nbsp </b>
+                                     <input type="text" name="description" id="description" value="" size="140" 
+                                          style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                                 
+                             </tr>
+                         </table>
+                  </td></tr>
+                   
+                  <tr><td>
+                       <table>
+                            <tr>
+                                 <td>
+                                   <b style="font-family:Verdana, sans-serif;color:blue;">Extra Details of Test : &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="details" id="details" value="" size="140" 
+                                            style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                             </tr>
+                         </table>
+               
+                  </td></tr>
+                  
+                  <tr><td>
+                       <table>
+                            <tr>
+                                 <td>
+                                   <b style="font-family:Verdana, sans-serif;color:blue;"> Number of Test cases planned to Add &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="num_of_tcs" id="num_of_tcs"  value="" size="10"
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:red"/> 
+                                 </td>
+                             </tr>
+                         </table>
+               
+                  </td></tr>
+                 
+                  <tr><td>
+                      <table>
+                            <tr>
+                                 <td>
+                                   <b style="font-family:Verdana, sans-serif;color:blue;"> Time period Give to complete Test in Minutes &nbsp: &nbsp </b>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="time" id="time" value="" size="10" 
+                                            style="height:30px;border-width:3px;border-style:outset;border-color:red"/>
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+                  
+                  <tr><td>
+                     <table align="center">
+                            <tr align="center">
+                                 <td>
+                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                                   <input type="submit" value="Submit" size="30" onclick="javascript:create_new_test_set_id( );return false;"
+                                           
+                                           style="height:30px;border-width:3px;border-style:outset;border-color:blue"/>
+                                 </td>
+                             </tr>
+                         </table> 
+                  </td></tr>
+            </table>
+
+</form>
+
+<div id="load_disp"> </div>
+<br><br><br><br>
+<div id="log"> </div>
+
+</div>

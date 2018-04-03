@@ -1,0 +1,187 @@
+<div width="80%" height="50px" style="margin-top:10px;margin-left:8px">
+       
+         <b style="font-family:Times New Roman,Georgia,Serif;color:blue; font-size:40px;font-style:normal;border:10px ">
+			    Online Objective Test Tool
+					  
+	 </b>
+	 <div style="bottom:0px; float:right">
+						<SMALL style="bottom:0px;float:inherit;color:#BC8F8F">
+						<a href="http://www.shivaprasad.co.in" target="_blank"> ©Author </a> 
+						</SMALL>
+          </div>
+	 <br><br><br>
+	 <img alt='pic not found' src="/static/images/My-otest/p1.jpg" width="110px" height="90px">
+         
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         
+	 <img alt='pic not found' src="/static/images/My-otest/p2.jpg" width="110px" height="90px">
+         
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 
+	 <img alt='pic not found' src="/static/images/My-otest/p3.jpg" width="100px" height="90px">
+	    
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 
+	 <img alt='pic not found' src="/static/images/My-otest/p4.jpg" width="100px" height="90px">   
+         
+	     
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     
+	 <a href="#" onclick="javascript:logout( '[% sid %]' )"><b>Logout</b> </a>
+	 <br><br>
+
+   <b> Welcome [% uname %] </b>     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 
+   <a href="index.pl?AppParam=EXMNEE_REP&test_set_id=[% testsetid %]" style="border:3px;"> Generate Report </a>  
+   
+   <br>
+</div>
+
+<div id="tc_view_container" style="border:2px inset blue">
+<br><br>
+ 
+   <table id="test_case_add" border="4px" cellpadding="10px"  align="center" style="margin-left:120px">
+      <tr>
+	  <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                      "  
+	    >
+	         Test Set Owner 
+	    </td>
+	    <td>
+	      <b>  [% testset_owner_name %] </b>
+	    </td>   
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Test set Description 
+	    </td>
+            <td>
+	       <b> [% description %] </b>
+	    </td>   
+	</tr>  
+       
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Test set Details 
+	    </td>
+            <td>
+	       <b> [% details %] </b>
+	    </td>   
+	</tr>  
+ 
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Number of Test cases 
+	    </td>
+            <td>
+	       <b> [% test_count %] </b>
+	    </td>   
+	</tr>           
+   
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     Time give in Minutes
+	    </td>
+            <td>
+	       <b> [% time_given %] </b>
+	    </td>   
+	</tr> 
+        
+	<tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     TEST SET ID
+	    </td>
+            <td>
+	       <b> [% testsetid %] </b>
+	    </td>   
+	</tr> 
+   
+        <tr>	  
+          <td  style="
+                                                   margin-left:5x;
+                                                   margin-right:5px;
+                                                   border-color:green;
+                                                   border-width:5px;
+                                                   background:#FBB917;
+                                                   font-family:Arial, Helvetica, sans-serif;
+                                                   font-size: large;
+                                                   color:white; 
+                          " 
+	    >
+                     TEST Start Time
+	    </td>
+            <td>
+	       <b> [% logtime %] </b>
+	    </td>   
+	</tr>
+   
+   </table>
+<br>
+</div>
+   
+   
